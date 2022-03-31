@@ -1,7 +1,6 @@
 body{
     background-color: black;
-    background-image: url("../../carBuyingSite/images/Golf V R32.jpg");
-    background-repeat: repeat-x;
+    background-image: repeating-conic-gradient(blue 10%,black 20%);
     padding-top: 70px;
     content: " ";
 }
