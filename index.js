@@ -7,10 +7,7 @@ function colorChange(elm){
             return elm.style.color="black";
         }
 };
-//A simple greeting function.
-function greet(){
-    return "Hello PetrolHead!";
-}
+
 //This will return an array of Html elements since the 'bi-geo-fill' class is associated with more than one element.
 let featuredListings=document.getElementsByClassName('bi-geo-fill');
 console.log(featuredListings)
