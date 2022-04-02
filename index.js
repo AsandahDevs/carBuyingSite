@@ -8,10 +8,6 @@ function colorChange(elm){
         }
 };
 
-//This will return an array of Html elements since the 'bi-geo-fill' class is associated with more than one element.
-let featuredListings=document.getElementsByClassName('bi-geo-fill');
-console.log(featuredListings)
-
 //Manipulating an achor tag attribute in html using 'setAttribute' method.
 let carValuatorLink=document.getElementById("scriptOne");
 carValuatorLink.setAttribute("href","https://www.autotrader.co.za/car-valuation");
