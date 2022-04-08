@@ -69,21 +69,22 @@
     </header>
     <main>
         <section class="container bg-gradient mt-5 p-5 text-white">
-            <form >
-                <div class="mb-2">
-                    <label class="form-label" for="names">UserName</label>
-                        <input type="text"  id="names"  placeholder="123Smith" class="form-control" style="width: 300px;" required>
+            <form name="form" >
+                <div class="mb-2 ">
+                    <label class="form-label"for="userId" >UserName</label>
+                        <input type="text"   name="names" id="userId" placeholder="JohnSmith " class="form-control" style="width: 300px;">
+                    <div class="error" id="nameErr"></div>
+                </div>
+                <div class="mb-2 ">
+                    <label class="form-label" for="keyword">Password <br>(Hint: for a strong password include lowercases and atleast a digit)</label>
+                        <input type="password" id="keyword" name="credentials"  placeholder="****"  class="form-control" style="width: 300px;">
+                    <div class="error" id="passwordErr"></div>
                 </div>
                 <div class="mb-2">
-                    <label class="form-label" for="credentials">Password</label>
-                        <input type="password"  id="credentials"  placeholder="****" class="form-control" style="width: 300px;" required>
+                    <label class="form-check-label">Remember me <em>(optional)</em></label>
+                        <input type="checkbox"  id="checkBoxErr" name="Remembercheck"   class="form-check" style="width: 1rem;">
                 </div>
-                <div class="mb-2">
-                    <label class="form-check-label" for="Remembercheck">Remember me</label>
-                        <input type="checkbox"  id="Remembercheck"   class="form-check" style="width: 1rem;">
-                </div>
-                <!--Using an event handler (onclick) to respond to user interaction upon clicking a button.-->
-                <button type="submit" class="btn btn-primary" onclick="confirm('Are you sure?')">Sign-in</button>
+                <button type="submit" value="submit" class="btn btn-primary">Sign-in</button>
             </form>
         </section>
         <nav>
